@@ -1,24 +1,16 @@
 const { Router } = require('express')
 const clientRouter = Router()
 const config = require('config')
-const sgMail = require('@sendgrid/mail')
 const firebase = require('firebase')
-sgMail.setApiKey(process.env.SENDGRID_API_KEY || config.get('SENDGRID_API_KEY'))
 const db = firebase.database()
 const fireStoreRef =  firebase.firestore()
 const vacanciesRef = db.ref('vacancies')  
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const {check, validationResult} = require('express-validator')
-const Vacancy = require('../client/models/vacancy')
- 
+const Vacancy = require('../models/vacancy')
 
-let vacancies = []  
-let data = []
-data.push(vacancies)
   
-
-//api/admin/vacancies
 clientRouter.post('/client/create', async (req, res) => {
     let now = new Date().toLocaleDateString()
     let newVacancyRef = db.ref(`vacancies/`).push()
@@ -36,7 +28,7 @@ clientRouter.post('/client/create', async (req, res) => {
     }
  
 })
-// put is on the roadmap
+
 clientRouter.put('/client/vacancies/:id', (req, res) => {
 
     let vacancy = vacancies.find(vac => vac.id == req.params.id)
@@ -58,12 +50,8 @@ clientRouter.put('/client/vacancies/:id', (req, res) => {
         res.json({vacancy})
         return newVacancyKey.update(vacancyData);
 })
-//api/admin/vacancies
+
 clientRouter.delete('/client/vacancies/:id', (req, res) => {
-
-    let index = vacancies.filter(vac => vac.id == req.params.id)
-
-    if (!index) return res.sendStatus(404)
 
     res.send(req.params.id) 
     let deleteVacancyRef = db.ref(`vacancies/${req.params.id}`)

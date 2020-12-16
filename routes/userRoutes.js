@@ -1,26 +1,17 @@
 const { Router } = require('express')
 const userRouter = Router()
-const config = require('config')
-const sgMail = require('@sendgrid/mail')
 const firebase = require('firebase')
-sgMail.setApiKey(process.env.SENDGRID_API_KEY || config.get('SENDGRID_API_KEY'))
 const db = firebase.database()
 const fs = firebase.firestore()
 const vacanciesRef = db.ref('vacancies')  
 const users = fs.collection('credentials')
-const usersRef = users.get()
-console.log(usersRef);
 const bcrypt = require('bcrypt')
 const { v4: uuidv4 } = require('uuid');
 const {check, validationResult} = require('express-validator')
 
 
 let vacancies = []  
-let data = []
-data.push(vacancies)
 
-
-//api/vacancies  
 userRouter.get('/vacancies', (req, res) => {  
 vacancies.length = 0
         vacanciesRef.once("value", function(vac) {
