@@ -18,7 +18,7 @@ import { OpenedVacancy } from '../components/user/vacancies/opened_vacancy/Opene
 export const UserRoutes = (props) => {
   const history = useHistory()
   const link = path => history.location.pathname.includes(path)
-  const isOn = link('login') || link('register') || link('/my/create')
+  const isOn = link('login') || link('register') || link('/create')
 
 
   return (
