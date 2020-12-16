@@ -1,0 +1,57 @@
+.container {
+    display: block;
+    margin: 20px auto 50px auto;
+    width: 350px;
+    padding-top: 30px;
+    img {
+      display: block;
+      margin: auto;
+      width: 180px
+    }
+    h4 {
+        text-align: center;
+    }
+  .wrapper {
+    padding: 0 30px 20px;
+    background-color: #F4F5F6;
+    .form {
+        display: block; 
+        margin: auto;
+        input {
+            background-color: #fff;
+            margin-top: 15px;
+            border: 1px solid #B6C9D6;
+            cursor: pointer;
+        }
+        input::placeholder {
+            padding-left: 10px;
+        }
+        input:focus {
+            box-shadow: none!important;
+            border: 1px solid #B6C9D6;
+          }
+      } 
+  }
+
+    button {
+        display: block;
+        width: 100%;
+        margin: 20px auto 0px auto;
+        background-color: #00A1F1;
+        font-weight: 700;
+        font-size: 17px;
+        text-transform: none;
+      } 
+    button:hover {
+      background-color: #008acf;
+    }
+    button:focus {
+      background-color: #008acf;
+    }
+      .register {
+        display: block;
+        text-align: center;
+        margin-top: 20;
+        font-size: 17;
+      }
+    }

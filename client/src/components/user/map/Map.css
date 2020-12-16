@@ -1,0 +1,181 @@
+a {
+    color:black;
+    text-decoration: none;
+}
+
+.map span {
+    font-size: small;
+}
+
+.map span:hover {
+    transition: all 0.3s ease-out;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+.map {
+    display: block;
+    margin: auto;
+    width: 1300px;
+}
+.map h4 {
+    text-align: center;
+}
+
+.map svg g .blue path:hover {
+    fill: rgb(182, 182, 105);
+    transition: all 0.5s ease-out;
+}
+
+.map svg g .yellow path:hover {
+    fill: rgb(71, 107, 187);
+    transition: all 0.5s ease-out;
+}
+
+.map svg g .yellow {
+    fill: rgb(182, 182, 105);
+}
+
+.map svg g .blue {
+    fill: rgb(71, 107, 187);
+}
+
+.map span    {
+  position: absolute;
+  z-index: 100;
+  fill: black;
+  font-size: 12;
+  font-weight: 10;
+  font-family:Verdana, serif;
+  }
+
+  .map .vinnitsa span {
+      margin-left: 505px;
+      margin-top: 250px;
+  }
+
+  .map .dnepr span {
+    margin-left: 770px;
+    margin-top: 295px;
+}
+
+.map .donetsk span {
+    margin-left: 930px;
+    margin-top: 300px;
+}
+
+.map .zhitomir span {
+    margin-left: 490px;
+    margin-top: 140px;
+}
+
+.map .zaporozhije span {
+    margin-left: 818px;
+    margin-top: 365px;
+}
+
+.map .ifrankovsk span {
+    margin-left: 310px;
+    margin-top: 250px;
+}
+
+.map .kiev span {
+    margin-left: 600px;
+    margin-top: 160px;
+  }
+
+  .map .kirovograd span {
+    margin-left: 640px;
+    margin-top: 290px;
+}  
+    
+  .map .krym span {
+    margin-left: 755px;
+    margin-top: 480px;
+}
+
+.map .lugansk span {
+    margin-left: 985px;
+    margin-top: 250px;
+}
+
+.map .lutsk span {
+    margin-left: 340px;
+    margin-top: 100px;
+}
+
+.map .lvov span {
+    margin-left: 290px;
+    margin-top: 200px;
+}
+
+.map .nikolaev span {
+    margin-left: 650px;
+    margin-top: 360px;
+}
+
+.map .odessa span {
+    margin-left: 550px;
+    margin-top: 460px;
+}
+
+.map .poltava span {
+    margin-left: 750px;
+    margin-top: 200px;
+}
+
+.map .rovno span {
+    margin-left: 417px;
+    margin-top: 100px;
+}
+
+.map .sumi span {
+    margin-left: 755px;
+    margin-top: 100px;
+}
+
+.map .ternopol span {
+    margin-left: 360px;
+    margin-top: 220px;
+}
+
+.map .uzhgorod span {
+    margin-left: 250px;
+    margin-top: 290px;
+}
+
+.map .harkov span {
+    margin-left: 870px;
+    margin-top: 210px;
+}
+
+.map .cherson span {
+    margin-left: 735px;
+    margin-top: 410px;
+}
+
+.map .chmelnitskiy span {
+    margin-left: 425px;
+    margin-top: 200px;
+}
+
+.map .cherkassi span {
+    margin-left: 595px;
+    margin-top: 250px;
+}
+
+.map .chernigov span {
+    margin-left: 650px;
+    margin-top: 85px;
+}
+
+.map .chernovtsi span {
+    margin-left: 365px;
+    margin-top: 300px;
+}

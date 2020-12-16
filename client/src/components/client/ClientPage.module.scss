@@ -1,0 +1,29 @@
+.container {
+    background-color: #F4F5F6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .wrapper {
+        margin: auto;
+        width: 1000px;
+        .linksWrapper {
+            display: flex;
+        }
+        h4 {
+            color: black!important;
+        }
+        .list {
+          section {
+            display: flex;
+            justify-content: space-between;
+            font-size: 17px;
+          }
+            li {
+                list-style: inside; 
+                color: #abb2ba;
+            }
+           
+                
+            
+        }
+    }
+}

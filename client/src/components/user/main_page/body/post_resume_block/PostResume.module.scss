@@ -1,0 +1,61 @@
+.container {
+    display: block;
+    .gridContainer {
+        display: grid;
+        margin: auto;
+        grid-template-areas: "l l l b";
+        padding: 20px;
+        background-color: #fff;
+        .post {
+            display: flex;
+            grid-area: l;
+            color: black;
+            .image {
+                margin-left: 15px;
+                svg {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+        
+            .text {
+                margin-left: 10px;
+                margin-bottom: 30px;
+                h5 {
+                    margin-top: 0px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .post:hover {  
+                fill: rgb(233, 31, 82);
+                transition: all 0.2s ease-out;
+                cursor: pointer;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: flex-end;
+            a {  
+                font-size: large;;
+                grid-area: b;
+                height: 45px!important;
+                padding: 7px 20px;
+                text-align: center;
+                font-size: 17px;
+                border-radius: 5px;
+                color: #fff;
+                background-color: #74c241;
+                font-weight: 700;
+
+            }
+            :hover {
+                background-color: #6fa74a;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,68 @@
+@media (min-width: 1200px) {
+    .search {
+        display: flex;
+        justify-content: space-between;
+        .searchVacancy {
+            display: flex;  
+        }
+        .button {
+            display: flex;
+            justify-content: flex-end;
+            width: 180px;
+            a {
+                justify-content: end;
+                height: 40px;
+                color: #fff;
+                background-color: #e42469;
+                font-weight: 700;
+                text-align: center;
+                cursor: pointer;
+                border: 1px solid transparent;
+                white-space: nowrap;
+                padding: 7px 20px;
+                font-size: 17px;
+                border-radius: 5px;
+            } 
+        }
+
+
+    }
+    .example {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        span {
+            i:hover {
+                cursor: pointer;
+                border-bottom: none;
+           }
+           i {
+               color: #ccecfc;
+            border-bottom: 1px dashed #80d0f8;
+        }
+        }
+        .search  {
+                cursor: pointer;
+                color: white;  
+                text-decoration: underline;
+        }
+        :hover {
+           
+                text-decoration: none;
+         
+           
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    .vacancy {
+        width: 160px;
+    }
+    .vacancy input:focus {
+        border-bottom: 1px solid #9c27b0!important;
+        box-shadow: 0 1px 0 0 #9c27b0!important;
+        width: 180px!important;
+    }
+}

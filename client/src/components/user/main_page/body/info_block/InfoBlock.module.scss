@@ -1,0 +1,75 @@
+ .wrapper {
+        h5 {
+            margin: 30px auto 20px auto
+        }
+        display: flex;
+        justify-content: space-between;
+        font-size: 17px;
+        padding-bottom: 60px;
+        .links {
+            width: 400px;
+           ul  {
+               margin-left: 20px;
+                display: block;
+                li {
+                    margin-bottom: 20px;
+                    :hover {
+                        border-bottom: 1px solid #039be5;
+                    }
+                    :before {
+                        content: '\2022';
+                        color: #abb2ba;
+                        display: block;
+                        font-size: 25px;
+                        max-width: 0;
+                        max-height: 0;
+                        position: relative;
+                        left: -20px;
+                        bottom: 7px;
+                    }
+                    
+                }
+            }
+            hr {
+                border-top: 1px solid grey;
+                margin: 20px auto;
+                width: 100%;
+                opacity: 0.2;
+            }
+            span {
+                display: flex;
+                margin: auto 5px auto 5px;
+                :hover {
+                      text-decoration: underline;
+              }
+            }
+        }
+        .info_circle {
+            display: block;
+            text-align: center;
+            margin-bottom: 35px;
+            a {
+                display: block;
+                width: 220px;
+                h5 {
+                    color: black;
+                }
+            }
+            .circle {
+                margin: 0px auto 20px auto;
+                background-color: #fff;
+                border-radius: 50%;
+                height: 120px;
+                width: 120px;
+                line-height: 1.1;
+                padding-top: 35px;
+                font-size: 20px;
+            }
+            :hover {
+                span {
+                    text-decoration: underline;
+                 }
+          }
+        }
+
+    }

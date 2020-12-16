@@ -1,0 +1,52 @@
+.container {
+    display: block;
+    margin: 0px auto 20px;
+    padding: 0 80px 0 70px;
+    background-color: #fff;
+    .wrapper {
+        display: flex;
+        .image img {
+            margin: auto;
+            width: auto;
+            height: 100px;
+        }
+        .link {
+            display: block;
+            margin-right: auto;
+            width: 300px;
+            div {
+                display: block;
+                height: auto;
+                width: auto;
+                margin: 0px;
+                padding: 0px;
+                border-top: rgb(228,36,105) solid 10px;
+                color: rgb(0,161,241);
+                h5 {
+                    font-weight: bold;
+                    
+                }
+                
+            }
+        }
+        .btn {
+            margin: auto 0px auto auto;
+            span {
+                font-weight: 700;
+                cursor: pointer;
+                border: 1px solid rgb(0,161,241);
+                padding: 7px 20px;
+                font-size: 17px;
+                border-radius: 5px;
+            }
+        }
+
+        .btn:hover {
+            color: #007ebd;
+            span {
+                border-color: #007ebd;
+            }
+        }
+    }
+
+}

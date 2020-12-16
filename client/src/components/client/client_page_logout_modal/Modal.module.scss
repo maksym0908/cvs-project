@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+    span {
+        margin: auto 0px auto 0px;
+    color: #abb2ba;
+    cursor: pointer;
+    }
+    span:hover {
+            color:#6e7072;
+        }
+}
+.footer {
+    display: flex;
+    button {
+    color: #fff;
+    background-color: #00a1f1;
+    border-color: transparent;
+    border-radius: 5%;
+    height: 40px;
+    width: 70px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0081c2;
+}
+    span {
+        
+        font-size: 17px;
+        margin: auto 5px auto 5px;
+        :nth-child(2) {
+            color: #ff3b30;
+            cursor: pointer;
+            
+        }
+        :nth-child(2):hover {
+                text-decoration: underline;
+        }   
+    }
+}

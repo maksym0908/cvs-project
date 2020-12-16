@@ -1,0 +1,69 @@
+.left, .right, .up, .down {
+    width: 10px;
+    height: 10px;
+    path {
+        fill: #039be5;
+    }
+}
+.left {
+    margin-right: 5px;
+}
+.delete {
+    width: 20px;
+    height: 20px;
+    path {
+        fill: gray;
+    }
+}
+.wrapper {
+    background-color: #fff;
+    padding: 25px 10px;
+    display: flex;
+    border: 1px solid #F4F5F6;
+    span {
+        margin: 0px 0px 0px 40px;
+        font-size: large;
+        width: 180px;
+        color: #039be5;
+    }        
+        svg {
+            width: 60px;
+            height: 60px;
+    }
+}
+
+.my {
+    width: 350px;
+    background-color: #fff;
+    padding: 25px 10px;
+    display: flex;
+    border: 1px solid #F4F5F6;
+    span {
+        margin: 0px 0px 0px 20px;
+        font-size: 17px;
+        width: 100px;
+        color: #039be5;
+    }        
+        svg {
+            width: 60px;
+            height: 60px;
+    }
+    .num {
+        text-align: right;
+        padding: 3px 10px;
+        background-color: #e42469;
+        color: #fff;
+        display: inline-block;
+        height: 30px;
+        width: auto;
+        border-radius: 10px; 
+    }
+}
+
+.wrapper:hover, .my:hover {
+        fill: rgb(233, 31, 82);
+        cursor: pointer;
+        :nth-child(2) {
+            text-decoration: underline!important;
+        } 
+    }

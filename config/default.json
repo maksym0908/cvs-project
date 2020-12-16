@@ -1,0 +1,10 @@
+{
+    "port": 5000, 
+    "SENDGRID_API_KEY": "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", 
+    "fire-base": {
+        "apiKey": "AIzaSyDsTRmrIN2aeSUFvxkuJcmgZZ9PzcBXb0c",
+        "databaseURL": "https://lfj-project.firebaseio.com",
+        "projectId": "lfj-project"
+    }, 
+    "jwtSecret": "max cvs jwt"
+}

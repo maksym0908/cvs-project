@@ -1,0 +1,48 @@
+.container {
+    display: block;
+    margin: 20px auto 20px auto;
+    padding-bottom: 10px;
+    background-color: white;
+    .gridContainer {
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-areas: "i i i i i i";
+        .wrapper {
+            margin: auto;
+            :hover {
+                transition: all 0.3s ease-out;
+                transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                -o-transform: scale(1.2);
+    }
+    
+            img {
+                width: 100px;
+                grid-area: i;
+                
+            }
+        }
+    
+    }
+.filter {
+    display: flex;
+    margin: 20px;
+    justify-content: flex-end;
+    span:hover {
+            border-bottom: 1px solid #039BE7;
+    }
+    svg {
+        margin-top: 4px;
+        margin-left: 7px;
+        width: 10px;
+        
+        
+        path {
+            fill: #039BE7;
+            margin-top: 13px;
+         }
+    }
+}
+}

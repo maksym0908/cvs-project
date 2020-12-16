@@ -1,0 +1,12 @@
+.container {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #F4F5F6;
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin: auto;
+}
+}

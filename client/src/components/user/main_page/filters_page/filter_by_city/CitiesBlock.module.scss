@@ -1,0 +1,75 @@
+.container {
+    background-color: #F4F5F6;
+    .wrapper {
+        background-color: #fff;
+        width: 1000px;
+        margin: auto;
+        .link {
+           font-size: 17px;
+            display: block;
+            padding: 20px 0px 10px 0px;
+            background-color: #F4F5F6;
+            :hover {
+                text-decoration: underline;
+            }
+        }
+        .text {
+            margin: 0px;
+            padding: 20px 0px;
+            background-color: #F4F5F6;
+
+        }
+        .bigCities {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 40px 0px;
+            text-align: center;
+            .length {
+                color: #abb2ba;
+            }
+            p {
+                font-size: 17px;
+                margin: 0px;
+            }
+            :hover {
+                p {
+                    text-decoration: underline;
+                }   
+            }
+            .image {
+                display: block;
+                width: 100px;
+
+                img {
+                    width: 60px;
+                    height: 80px;
+                }
+            }
+
+        }
+        ul {
+            border: 1px solid #e9ebed;
+            padding: 20px 30px;
+            margin: 0px;
+            h5 {
+                margin: 0px;
+                padding-bottom: 20px;
+                font-weight: 650;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            li {
+                list-style: inside; 
+                color: #abb2ba;
+                span {
+                    margin-left: 10px;
+                    color: #abb2ba;
+                }
+            }
+
+        }   
+
+    }
+
+}
