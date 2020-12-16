@@ -18,12 +18,12 @@ import { OpenedVacancy } from '../components/user/vacancies/opened_vacancy/Opene
 export const UserRoutes = (props) => {
   const history = useHistory()
   const link = path => history.location.pathname.includes(path)
-  const isGetIn = link('login') || link('register') || link('/my/create')
+  const isOn = link('login') || link('register') || link('/my/create')
 
 
   return (
     <>
-     {!isGetIn ? <Header vacancies={props.vacancies} user={props.user} /> : null}
+     {!isOn ? <Header vacancies={props.vacancies} user={props.user} /> : null}
       <Switch>
         <Route path="/" exact>
           <Body vacancies={props.vacancies} />
