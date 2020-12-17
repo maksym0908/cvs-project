@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom'
+import { Switch, Route, Redirect, BrowserRouter } from 'react-router-dom'
 import { ClientPage } from '../components/client/ClientPage';
 import CreateVacancyForm from '../components/user/main_page/header/create_vacancy/CreateVacancyForm';
 import { PostedJobs } from '../components/client/postedJobs/PostedJobs';
@@ -53,7 +53,6 @@ export const ClientRoutes = props => {
       </Route>  
            
             </Switch>
-            
             <Footer /> 
             </>
         )

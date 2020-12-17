@@ -8,7 +8,7 @@ export const Header = props => {
   const data = props.user
   const vacancies = props.vacancies
   const history = useHistory()
-  const userPage = history.location.pathname.includes('/my')
+  const userPage = history.location.pathname.includes('my')
   const check = present => history.location.pathname.includes(present)
   const onVacanciesPage = check('filters') || check('vacancies')
   const onUserPage = check('my')
@@ -71,7 +71,7 @@ export const Header = props => {
             <img alt="work.ua logo" src="https://st.work.ua/i/press_kit/work_dark_bgs.png"/>
           </a>   
         <div className={classes.btns}>
-          <a className={classes.search} style={onVacanciesPage ? border : null} href="/filters"><span>Найти вакансии</span></a>
+          <a className={classes.search} style={onVacanciesPage ? border : null} href="/filters"><span>Найти вакансии</span> </a>
           { data ? <a className={classes.name} style={onUserPage ? border : null} href="/my/main-page"><span>{ `${firstName} ${lastName}` }</span></a>
             : <a className={classes.login} href="/login"><span>Войти</span> </a>}
         </div>

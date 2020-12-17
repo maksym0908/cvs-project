@@ -1,5 +1,5 @@
-import { GET_VACANCIES, REGISTER, DELETE_VACANCY, CREATE_VACANCY, EDIT_VACANCY } from "./actions/userActions"
-import { SET_CURRENT_PAGE } from "./actions/pagination"
+import { GET_VACANCIES, REGISTER, DELETE_VACANCY, CREATE_VACANCY, EDIT_VACANCY, SET_CURRENT_PAGE } from "./actions/userActions"
+
 
 
 export const UserReducer = (state = [], action) => {

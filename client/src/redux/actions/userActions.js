@@ -3,6 +3,7 @@ export const CREATE_VACANCY = 'CREATE_VACANCY'
 export const REGISTER = 'REGISTER'
 export const EDIT_VACANCY = 'EDIT_VACANCY'
 export const DELETE_VACANCY = 'DELETE_VACANCY'
+export const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE' 
 
 
 export const getVacancies = () => {
@@ -62,3 +63,9 @@ export const register = data => {
     }
 }
 
+export const setCurrentPage = (currentPage = 1) => {
+    return {
+        type: SET_CURRENT_PAGE, 
+        currentPage
+    }
+}

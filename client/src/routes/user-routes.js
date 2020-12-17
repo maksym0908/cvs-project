@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, useHistory } from 'react-router-dom'
+import { Switch, Route, useHistory, Redirect, BrowserRouter } from 'react-router-dom'
 import { Header } from '../components/user/main_page/header/Header';
 import { Body } from '../components/user/main_page/body/Body';
 import { VacanciesPage } from '../components/user/vacancies/VacanciesPage';
@@ -18,20 +18,19 @@ import { OpenedVacancy } from '../components/user/vacancies/opened_vacancy/Opene
 export const UserRoutes = (props) => {
   const history = useHistory()
   const link = path => history.location.pathname.includes(path)
-  const isOn = link('login') || link('register') || link('/create')
+  const isOn = link('login') || link('register') || link('create')
 
 
   return (
     <>
      {!isOn ? <Header vacancies={props.vacancies} user={props.user} /> : null}
-      <Switch>
         <Route path="/" exact>
           <Body vacancies={props.vacancies} />
         </Route>
-        <Route path="/vacancies/by-category" exact>
+        <Route path="/vacancies/by-category" >
           <CategoriesBlock vacancies={props.vacancies} />
         </Route>
-        <Route path="/vacancies/by-city" exact>
+        <Route path="/vacancies/by-city" >
           <CitiesBlock vacancies={props.vacancies} />
         </Route>
         <Route path="/vacancies/by-companies">
@@ -72,8 +71,7 @@ export const UserRoutes = (props) => {
           error={props.registerError}
           success={props.registerSuccess}
            handleRegister={props.onHandleRegister} />
-        </Route>      
-      </Switch>
+        </Route>  
     </>
   )
 }

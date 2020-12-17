@@ -1,0 +1,1 @@
+#Website for searching and posting jobs all over Ukraine. Adaptive view is on the road map and will be pushed soon.

@@ -1,8 +1,7 @@
 import { connect } from 'react-redux'
 import App from '../App'
 import { login, removeSavedVacancy, saveVacancy} from '../redux/actions/clientActions'
-import { setCurrentPage } from '../redux/actions/pagination'
-import { createVacancy, deleteVacancy, editVacancy, getVacancies, register } from '../redux/actions/userActions'
+import { createVacancy, deleteVacancy, editVacancy, getVacancies, register, setCurrentPage } from '../redux/actions/userActions'
 function mapStateToProps(state) {
 
     return {
