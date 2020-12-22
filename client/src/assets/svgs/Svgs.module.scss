@@ -17,7 +17,7 @@
 }
 .wrapper {
     background-color: #fff;
-    padding: 25px 10px;
+    padding: 25px 50px;
     display: flex;
     border: 1px solid #F4F5F6;
     span {
@@ -39,7 +39,8 @@
     display: flex;
     border: 1px solid #F4F5F6;
     span {
-        margin: 0px 0px 0px 20px;
+        padding: 0px 40px 0px 20px;
+        // margin: 0px 0px 0px 20px;
         font-size: 17px;
         width: 100px;
         color: #039be5;
@@ -49,7 +50,7 @@
             height: 60px;
     }
     .num {
-        text-align: right;
+        margin-left: auto;
         padding: 3px 10px;
         background-color: #e42469;
         color: #fff;
