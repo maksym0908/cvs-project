@@ -12,7 +12,6 @@ const {check, validationResult} = require('express-validator')
 
 
 userRouter.get('/vacancies', (req, res) => {  
-    console.log(res);
         vacanciesRef.once("value", function(vac) {
                     res.send(Object.values(vac.val()))         
     })  

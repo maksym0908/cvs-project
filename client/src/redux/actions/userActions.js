@@ -15,7 +15,6 @@ export const getVacanciesFromLocalStorage = () => {
 }
 
 export const getVacancies = () => {
-    debugger
     return {
         type: GET_VACANCIES, 
         request: {
