@@ -6,8 +6,12 @@ import { ClientRoutes } from './routes/client-routes';
 const App = props => {
   const getVacancies = props.onGetVacancies
   const setCurrentPage = props.onSetCurrentPage
+  const getVacanciesFromLocalStorage = props.onGetVacanciesFromLocalStorage
   const initializeApp = () => {
-    getVacancies()
+    if (!JSON.parse(localStorage.getItem('vacancies'))) {
+      getVacancies()
+    } else return getVacanciesFromLocalStorage()
+    
     setCurrentPage(1)
   }
 

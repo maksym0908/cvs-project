@@ -1,8 +1,9 @@
-import { GET_VACANCIES, REGISTER, DELETE_VACANCY, CREATE_VACANCY, EDIT_VACANCY, SET_CURRENT_PAGE } from "./actions/userActions"
+import { GET_VACANCIES, REGISTER, DELETE_VACANCY, CREATE_VACANCY, EDIT_VACANCY, SET_CURRENT_PAGE, GET_VACANCIES_FROM_LOCAL_STORAGE } from "./actions/userActions"
 
 
 
 export const UserReducer = (state = [], action) => {
+    
     switch (action.type) {
         case GET_VACANCIES:
             if (!action.data) {
@@ -12,9 +13,12 @@ export const UserReducer = (state = [], action) => {
                return action.data
             } 
 
+            case GET_VACANCIES_FROM_LOCAL_STORAGE:
+
+                return action.vacancies
+
             case CREATE_VACANCY:
                 state.push(action.data)
-                console.log(action.data);
                 return state
 
     

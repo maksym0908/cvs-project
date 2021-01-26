@@ -10,14 +10,11 @@ const { v4: uuidv4 } = require('uuid');
 const {check, validationResult} = require('express-validator')
 
 
-let vacancies = []  
 
 userRouter.get('/vacancies', (req, res) => {  
-vacancies.length = 0
+    console.log(res);
         vacanciesRef.once("value", function(vac) {
-            vacancies.push(vac.val())
-                    res.send(Object.values(...vacancies))
-                    
+                    res.send(Object.values(vac.val()))         
     })  
 }) 
 

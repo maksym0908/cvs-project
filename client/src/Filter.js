@@ -2,7 +2,6 @@ import { Params } from "./params"
 
 export const GetFilteredVacancies = (vacancies, category_filter) => {
 let {city_param, position_param, category_param, advs, filter_by_category, filter_by_city, filter_by_student, filter_by_titles, filter_by_remote, filter_by_disability, company_name_param, extended_search, id} = Params()
-
         if (advs) {
                 if (city_param && position_param) {
                         return vacancies.filter(v => v.cityValue === city_param && v.position.toLowerCase() === position_param)

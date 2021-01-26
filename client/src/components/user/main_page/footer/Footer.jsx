@@ -73,7 +73,7 @@ export const Footer = () => {
             <hr />
             <div className={classes.bottom}>
                 <span>
-                    Сделано в компании &#171;<a href="https://www.reactor.com.ua/">Криворук</a>&#187;.
+                    Сделано в компании &#171;<a href="https://github.com/maksym0908">Криворук</a>&#187;.
                 </span>
                 <span>
                     <a href="https://www.education.ua/">Образование</a>

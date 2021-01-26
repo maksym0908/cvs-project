@@ -1,0 +1,8 @@
+{
+    "fire-base": {
+        "apiKey": "AIzaSyDsTRmrIN2aeSUFvxkuJcmgZZ9PzcBXb0c",
+        "databaseURL": "https://lfj-project.firebaseio.com",
+        "projectId": "lfj-project"
+    }, 
+    "jwtSecret": "max cvs jwt"
+}

@@ -1,13 +1,21 @@
 export const GET_VACANCIES = 'GET_VACANCIES'
+export const GET_VACANCIES_FROM_LOCAL_STORAGE = 'GET_VACANCIES_FROM_LOCAL_STORAGE'
 export const CREATE_VACANCY = 'CREATE_VACANCY'
 export const REGISTER = 'REGISTER'
 export const EDIT_VACANCY = 'EDIT_VACANCY'
 export const DELETE_VACANCY = 'DELETE_VACANCY'
 export const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE' 
 
+export const getVacanciesFromLocalStorage = () => {
+    const vacancies = JSON.parse(localStorage.getItem('vacancies')) 
+    return {
+        type: GET_VACANCIES_FROM_LOCAL_STORAGE, 
+        vacancies
+    }
+}
 
 export const getVacancies = () => {
-    
+    debugger
     return {
         type: GET_VACANCIES, 
         request: {

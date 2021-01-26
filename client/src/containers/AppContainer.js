@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import App from '../App'
 import { login, removeSavedVacancy, saveVacancy} from '../redux/actions/clientActions'
-import { createVacancy, deleteVacancy, editVacancy, getVacancies, register, setCurrentPage } from '../redux/actions/userActions'
+import { createVacancy, deleteVacancy, editVacancy, getVacancies, getVacanciesFromLocalStorage, register, setCurrentPage } from '../redux/actions/userActions'
 function mapStateToProps(state) {
 
     return {
@@ -24,6 +24,7 @@ function mapDispatchToProps(dispatch) {
         onHandleLogin: data => dispatch(login(data)),
         onRemoveSavedVacancy: (vacancy, userId) => dispatch(removeSavedVacancy(vacancy, userId)), 
         onGetVacancies: () => dispatch(getVacancies()),
+        onGetVacanciesFromLocalStorage: () => dispatch(getVacanciesFromLocalStorage()),
         onSetCurrentPage: page => dispatch(setCurrentPage(page)),  
         onHandleRegister: data => dispatch(register(data)), 
         onSaveVacancy: (vacancy, userId) => dispatch(saveVacancy(vacancy, userId)), 
