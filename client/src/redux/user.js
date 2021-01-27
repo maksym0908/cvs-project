@@ -1,4 +1,4 @@
-import { GET_VACANCIES, REGISTER, DELETE_VACANCY, CREATE_VACANCY, EDIT_VACANCY, SET_CURRENT_PAGE, GET_VACANCIES_FROM_LOCAL_STORAGE } from "./actions/userActions"
+import { GET_VACANCIES, REGISTER, REGISTER_FAILURE, DELETE_VACANCY, CREATE_VACANCY, EDIT_VACANCY, SET_CURRENT_PAGE, GET_VACANCIES_FROM_LOCAL_STORAGE } from "./actions/userActions"
 
 
 
@@ -48,11 +48,15 @@ export const UserRegisterReducer = (state = [], action) => {
     switch (action.type) {
         case REGISTER:
             if (action.data.message) {
-                return {message: action.data.message}
-            }  else if (action.error.response.data.error) {
+                return {success: action.data.message}
+            }  
+            
+        case REGISTER_FAILURE:
+            const error = action.error
+                if (error) {
                 return {error: action.error.response.data.error}
             }
-    
+
         default:
            return state
     }

@@ -83,18 +83,18 @@ clientRouter.post('/client/login', [
             }) 
         })  
         const user = arr.filter(u => u.login === login)
-        loggedInUser = [...user]  
-        const isMatchLogin = await loggedInUser[0].login.includes(login)
-        const isMatchPassword = await bcrypt.compare(password, loggedInUser[0].password)
+        loggedInUser = user[0]  
+        const isMatchLogin = await loggedInUser.login.includes(login)
+        const isMatchPassword = await bcrypt.compare(password, loggedInUser.password)
         if (!isMatchPassword || !isMatchLogin) { 
             res.status(400).json({ message: 'Неверный логин или пароль'})
           } else {
             const token = jwt.sign(
               { userID: login }, 
-              config.get('jwtSecret'), 
+              "max cvs jwt" , 
               {expiresIn: '1h'}
           )
-          res.json({ token, userID: login, name: loggedInUser[0].name, surname: loggedInUser[0].surname, id: loggedInUser[0].id, savedVacancies: loggedInUser[0].savedVacancies})
+          res.json({ token, userID: login, name: loggedInUser.name, surname: loggedInUser.surname, id: loggedInUser.id, savedVacancies: loggedInUser.savedVacancies})
           }
     }
 

@@ -50,13 +50,11 @@ userRouter.post('/register', [
             id: id
         }
         ).then(() => {
-            console.log("Document was successfully written!");
-            res.status(201).json({message: 'Пользователь создан'})
+            res.status(201).json({message: 'Регистрация прошла успешно'})
         }).catch((e) => { 
             console.error("Error writing document: ", e)
         })
         
-
     } catch (e) {
         res.status(500).json({message: 'Что то пошло не так, попробуйте снова'})
     }

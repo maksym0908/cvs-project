@@ -1,11 +1,14 @@
 export const LOGIN = 'LOGIN'
 export const SAVE_VACANCY = 'SAVE_VACANCY'
 export const REMOVE_SAVED_VACANCY = 'REMOVE_SAVED_VACANCY'
+export const LOGIN_FAILURE = 'LOGIN_FAILURE'
+
 
 
 
  
 export const login = (data) => {
+    debugger
     return { 
         type: LOGIN, 
         request: {

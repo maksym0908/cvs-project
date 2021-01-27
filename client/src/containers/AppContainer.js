@@ -2,8 +2,8 @@ import { connect } from 'react-redux'
 import App from '../App'
 import { login, removeSavedVacancy, saveVacancy} from '../redux/actions/clientActions'
 import { createVacancy, deleteVacancy, editVacancy, getVacancies, getVacanciesFromLocalStorage, register, setCurrentPage } from '../redux/actions/userActions'
-function mapStateToProps(state) {
 
+function mapStateToProps(state) {
     return {
         user: JSON.parse(localStorage.getItem('userData')), 
         savedVacancies: localStorage.getItem('savedVacancies'),

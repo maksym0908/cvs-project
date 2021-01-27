@@ -18,18 +18,16 @@ export const Register = props => {
     const registerHandler = data => {
        props.handleRegister(data)
     }
-
     useEffect(() => {
         if (error) {
             message(error)
         } 
         else if (success) {
+          debugger
             message(success)
-            setTimeout(() => {
-                history.push('/my')
-            }, 1000)
+                history.push('/login')
         }
-    }, [error,])
+    }, [error, success])
 
     return (
         <div>
